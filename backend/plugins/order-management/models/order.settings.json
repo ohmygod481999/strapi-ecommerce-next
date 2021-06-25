@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "note": {
+      "type": "richtext"
+    },
+    "customer_name": {
+      "type": "text"
+    },
+    "customer_mobile": {
+      "type": "text"
+    },
+    "customer_email": {
+      "type": "text"
+    },
+    "products": {
+      "collection": "product",
+      "dominant": true
+    }
+  }
+}
